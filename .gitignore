@@ -1,0 +1,18 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+bin
+
+# Fabric/Minecraft folders
+run/
+
+# Folders and files used by gradle and IDEs
+.vscode
+.idea
+.settings
+.classpath
+.project
+.DS_Store
+*.iml

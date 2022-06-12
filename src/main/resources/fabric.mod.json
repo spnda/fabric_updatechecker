@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "updatechecker",
+
+  "version": "${version}",
+  "name": "Update Checker",
+  "description": "Adds an update checker for all your favourite mods!",
+  "authors": [
+    "spnda"
+  ],
+  "contact": {
+    "sources": "https://github.com/spnda/update-checker"
+  },
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.sean.updatechecker.UpdateChecker"
+    ]
+  },
+  "mixins": [
+    "mixins.updatechecker.json"
+  ],
+
+  "depends": {
+    "java": ">=17"
+  },
+  "suggests": {
+    "modmenu": "*"
+  },
+
+  "custom": {
+    "updatedata": {
+      "provider": "modrinth",
+      "projectId": "updatechecker"
+    }
+  }
+}
